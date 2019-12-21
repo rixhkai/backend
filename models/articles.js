@@ -22,10 +22,10 @@ module.exports = (sequelize, DataTypes) => {
    foreignKey: "author_id"
   });
 
-  articles.belongsTo(models.categories, {
-   as: "category",
-   foreignKey: "id"
-  });
+  //   articles.belongsTo(models.categories, {
+  //    as: "category",
+  //    foreignKey: "id"
+  //   });
 
   articles.hasMany(models.comments, {
    as: "comment",
