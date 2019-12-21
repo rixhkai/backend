@@ -1,7 +1,7 @@
 require("express-group-routes"); //initiate group route
 const express = require("express"); // initiate express module/dependency
 const app = express(); //declare new variable
-const port = process.env.PORT`` || 5000; // declare port server that will use
+const port = process.env.PORT || 5000; // declare port server that will use
 const bodyParser = require("body-parser"); // initiate body parser
 const session = require("express-session");
 const Auth = require("./controllers/auth");
